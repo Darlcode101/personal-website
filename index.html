@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Darlington</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-name">Alex Darlington</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <img class="hero-banner" src="assets/images/hero.jpg" alt="Mountain ridge banner" onerror="this.classList.add('placeholder')">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <img class="hero-avatar" src="assets/images/about.jpg" alt="Alex Darlington" onerror="this.classList.add('placeholder')">
+      <h1>Hi, I'm Alex.</h1>
+      <p class="tagline">Second-year Computer Science student at Lancaster University (1:1).</p>
+      <a href="#projects" class="btn">See my work</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About</h2>
+      <p>
+        I'm a second-year Computer Science student at Lancaster University. I work as a
+        Teaching Assistant for Computer and Systems Architecture, and as a Quantitative
+        Developer at the Ghosal Investment Fund.
+      </p>
+      <p>
+        Outside of school, I am passionate about all things data science, sport, and finance.
+      </p>
+      <p>
+        In my free time I enjoy mountaineering and trail running.
+      </p>
+      <p>
+        Native French and English, German (B1).
+      </p>
+      <p>
+        I'm looking for internships and opportunities in software engineering, data science,
+        or quantitative development.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="assets/images/projects/run-predictor.jpg" alt="Run predictor project screenshot" onerror="this.classList.add('placeholder')">
+        </div>
+        <h3>Run Predictor</h3>
+        <p>ML pipeline predicting 5K race times from 7,000+ historical races.</p>
+        <p>Compared Linear Regression and XGBoost against a Riegel baseline — XGBoost cut MAE by 17%.</p>
+        <a href="https://github.com/Darlcode101/runTime-prediction" target="_blank" rel="noopener" class="project-link">View project &rarr;</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="assets/images/projects/java-route-planner.jpg" alt="Java route planner project screenshot" onerror="this.classList.add('placeholder')">
+        </div>
+        <h3>Java Route Planner</h3>
+        <p>Route-planning app for any metro system using Dijkstra's algorithm and CSV station data, with shortest-time and fewest-line-change routing via a Swing interface.</p>
+        <a href="https://github.com/Darlcode101/Metrolink" target="_blank" rel="noopener" class="project-link">View project &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="hobbies" id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobby-grid">
+      <div class="hobby-photo">
+        <img src="assets/images/ski-touring.jpg" alt="Ski touring in the mountains" onerror="this.classList.add('placeholder')">
+      </div>
+      <div class="hobby-photo">
+        <img src="assets/images/trail-running.jpg" alt="Trail running in the mountains" onerror="this.classList.add('placeholder')">
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Java</li>
+      <li>Python</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>SQL</li>
+      <li>NumPy</li>
+      <li>pandas</li>
+      <li>scikit-learn</li>
+      <li>XGBoost</li>
+      <li>matplotlib</li>
+      <li>MySQL</li>
+      <li>Parquet</li>
+      <li>AWS</li>
+      <li>Git</li>
+      <li>Linux</li>
+      <li>Firebase</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in touch</h2>
+    <div class="contact-links">
+      <a href="mailto:a.darlington3@lancaster.ac.uk">Email</a>
+      <a href="https://github.com/Darlcode101" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/alexander-darlington/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Alex Darlington</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
