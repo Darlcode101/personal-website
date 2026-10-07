@@ -214,21 +214,33 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
-/* Skills */
-.skills-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 2rem;
+/* Skills + Hackathons */
+.skills-hackathons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
-.skills-list li {
-  background: var(--bg-alt);
-  padding: 0.5rem 1.1rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
+.skills-hackathons h3 {
+  margin: 1.5rem 0 0;
+  font-size: 1rem;
+}
+
+.skills-list,
+.hackathon-list {
+  padding-left: 1.2rem;
+  margin: 1rem 0 0;
+  color: var(--text-dim);
+}
+
+.skills-list {
+  columns: 2;
+}
+
+@media (max-width: 700px) {
+  .skills-hackathons {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Contact */
